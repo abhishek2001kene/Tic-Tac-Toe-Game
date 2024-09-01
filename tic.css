@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dda15e;
+    text-align: center;
+    
+}
+
+.contain {
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    /* background: #000; */
+
+}
+
+.game {
+    height: 70vmin;
+    width: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #606c38;
+    border-radius: 20px;
+    gap: 25px;
+}
+
+.box {
+    height: 20vmin;
+    width: 20vmin;
+    border-radius: 20px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: hsl(88, 38%, 15%);
+    background-color: #fefae0;
+    box-shadow:rgba(0, 0, 0, 0.884) ;
+    
+}
+#reset{
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    background-color: rgb(27, 27, 27);
+    color: rgb(245, 242, 237);
+}
+
+#newgame{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 20px;
+    background-color: rgb(27, 27, 27);
+    color: rgb(245, 242, 237);
+}
+
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+background: #3d8fdc;
+}
+
+.hide{
+    display: none;
+}
+
+#msg{
+    color: rgb(27, 62, 2);
+    background-color:  hsl(60, 100%, 53%);
+    font-size: 20px;
+    font-weight: bolder;
+}
+    
+
+
+@media (max-width:500px) {
+    .box {
+        height: 18vmin;
+        width: 18vmin;
+        border-radius: 10px;
+        font-size: 13vw;
+    }
+
+    .game{
+        gap: 10px;
+    }
+
+    .contain{
+        height: 40%;
+        margin-top: 20vw;
+
+    }
+
+    body{
+        /* background: #f31e1e; */
+    }
+
+    main{
+        /* background: #1da568; */
+        margin-top: 30vw;
+    }
+    main h1{
+
+        padding-top: 20vw;
+    }
+
+    #reset{
+        margin-top: 10vw;
+    }
+    .msg-container{
+        margin-top: 70vw;
+    }
+}
